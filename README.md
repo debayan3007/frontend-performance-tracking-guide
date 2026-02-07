@@ -87,6 +87,8 @@ If you want to go deeper into specific parts of performance monitoring design:
   -> [docs/designing-alert-systems-developers-dont-ignore.md](docs/designing-alert-systems-developers-dont-ignore.md)
 - **Why PSI Scores Change Between Runs**  
   -> [docs/why-psi-scores-change-between-runs.md](docs/why-psi-scores-change-between-runs.md)
+- **How Often Should You Run PSI For Monitoring?**  
+  -> [docs/how-often-should-you-run-psi-for-monitoring.md](docs/how-often-should-you-run-psi-for-monitoring.md)
 - **Storing Performance Metrics: Schema & Tradeoffs**  
   -> [docs/storing-performance-metrics.md](docs/storing-performance-metrics.md)
 
