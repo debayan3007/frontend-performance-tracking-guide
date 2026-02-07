@@ -30,7 +30,7 @@ The result is predictable:
 
 Once an alert system loses trust, it is extremely difficult to recover.
 
-## Principle 1 — Alert on Actionability, Not Raw Thresholds
+## Principle 1 -- Alert on Actionability, Not Raw Thresholds
 
 The goal of an alert is not to detect every anomaly.
 The goal is to signal when a human should realistically take action.
@@ -55,7 +55,7 @@ Not:
 
 "Did a number spike once?"
 
-## Principle 2 — Assume Metrics Are Noisy
+## Principle 2 -- Assume Metrics Are Noisy
 
 Web performance metrics are inherently unstable.
 
@@ -69,7 +69,7 @@ Variance sources include:
 
 Alert systems must treat variance as expected, not exceptional.
 
-## Principle 3 — Use Consecutive Breach Detection
+## Principle 3 -- Use Consecutive Breach Detection
 
 Instead of alerting on single threshold breaches:
 
@@ -79,13 +79,13 @@ Alert if threshold exceeded N consecutive runs
 
 **Example:**
 
-- N = 2 → sensitive
-- N = 3 → balanced
-- N = 5 → conservative
+- N = 2 -> sensitive
+- N = 3 -> balanced
+- N = 5 -> conservative
 
 This dramatically reduces false positives without hiding real regressions.
 
-## Principle 4 — Use Rolling Windows Instead of Single Points
+## Principle 4 -- Use Rolling Windows Instead of Single Points
 
 Single runs are unreliable.
 
@@ -107,7 +107,7 @@ rolling average LCP (last 5 runs) > threshold
 
 This smooths noise and reveals real direction.
 
-## Principle 5 — Introduce Alert Cooldowns
+## Principle 5 -- Introduce Alert Cooldowns
 
 Without cooldowns, systems spam alerts during sustained incidents.
 
@@ -124,12 +124,12 @@ Cooldowns:
 - reduce duplicate investigation
 - improve perceived signal quality
 
-## Principle 6 — Separate Detection From Notification
+## Principle 6 -- Separate Detection From Notification
 
 Good systems separate:
 
-- **Detection** → internal signal
-- **Notification** → human interruption
+- **Detection** -> internal signal
+- **Notification** -> human interruption
 
 Not every signal needs notification.
 
@@ -138,7 +138,7 @@ Not every signal needs notification.
 - store signal events silently
 - notify only if severity escalates
 
-## Principle 7 — Alert on Change, Not Just Absolute Values
+## Principle 7 -- Alert on Change, Not Just Absolute Values
 
 Absolute thresholds miss gradual regressions.
 
@@ -158,7 +158,7 @@ Trend-based alerts catch:
 - incremental bundle growth
 - progressive third-party bloat
 
-## Principle 8 — Provide Context With Every Alert
+## Principle 8 -- Provide Context With Every Alert
 
 Every alert should answer:
 
@@ -170,7 +170,7 @@ Every alert should answer:
 
 Alerts without context create investigation overhead.
 
-## Principle 9 — Separate Mobile and Desktop Alerting
+## Principle 9 -- Separate Mobile and Desktop Alerting
 
 Mobile and desktop regressions rarely occur together.
 
@@ -181,7 +181,7 @@ Otherwise:
 - mobile regressions get hidden
 - desktop stability creates false confidence
 
-## Principle 10 — Design for Trust, Not Sensitivity
+## Principle 10 -- Design for Trust, Not Sensitivity
 
 Developers will tolerate:
 
@@ -198,26 +198,26 @@ Trust is the real performance metric of alert systems.
 
 ## Example: Progressive Alert Maturity Model
 
-### Level 1 — Threshold Only
+### Level 1 -- Threshold Only
 
 Alert if metric > threshold
 
 High noise. Low trust.
 
-### Level 2 — Consecutive Breach
+### Level 2 -- Consecutive Breach
 
 Alert if threshold breached 3 consecutive runs
 
 Much better signal.
 
-### Level 3 — Rolling Window + Cooldown
+### Level 3 -- Rolling Window + Cooldown
 
 Alert if rolling avg > threshold
 AND not alerted in last 60 minutes
 
 Production viable.
 
-### Level 4 — Baseline Deviation + Trend
+### Level 4 -- Baseline Deviation + Trend
 
 Alert if metric deviates > X% from historical baseline
 FOR Y consecutive windows
@@ -258,7 +258,7 @@ Track:
 - time-to-resolution
 - muted alert percentage
 
-If alert volume rises but investigation rate falls → trust is dropping.
+If alert volume rises but investigation rate falls -> trust is dropping.
 
 ## The Real Goal
 
