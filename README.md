@@ -91,8 +91,8 @@ If you want to go deeper into specific parts of performance monitoring design:
   -> [docs/how-often-should-you-run-psi-for-monitoring.md](docs/how-often-should-you-run-psi-for-monitoring.md)
 - **Tracking Core Web Vitals Over Time: Architecture and Data Model**  
   -> [docs/tracking-core-web-vitals-over-time.md](docs/tracking-core-web-vitals-over-time.md)
-- **Storing Performance Metrics: Schema & Tradeoffs**  
-  -> [docs/storing-performance-metrics.md](docs/storing-performance-metrics.md)
+- **Designing Performance Monitoring For Small Teams (MVP Approach)**  
+  -> [docs/designing-performance-monitoring-for-small-teams-mvp-approach.md](docs/designing-performance-monitoring-for-small-teams-mvp-approach.md)
 
 ## Prefer a Ready-Made Solution?
 
