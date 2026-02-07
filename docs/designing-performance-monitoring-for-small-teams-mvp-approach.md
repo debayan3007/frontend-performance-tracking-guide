@@ -302,10 +302,3 @@ Upgrade when:
 If you want something that already handles sampling, storage, and alerting for small teams:
 
 [https://app.webvitalskit.com](https://app.webvitalskit.com)
-
-**If you want next (optional but powerful), best candidates are:**
-
-- Real-World Core Web Vitals Alert Thresholds
-- Cost Of Running Performance Monitoring At Scale
-
-Both are strong traffic + authority docs.

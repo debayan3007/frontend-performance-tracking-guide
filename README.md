@@ -93,6 +93,8 @@ If you want to go deeper into specific parts of performance monitoring design:
   -> [docs/tracking-core-web-vitals-over-time.md](docs/tracking-core-web-vitals-over-time.md)
 - **Designing Performance Monitoring For Small Teams (MVP Approach)**  
   -> [docs/designing-performance-monitoring-for-small-teams-mvp-approach.md](docs/designing-performance-monitoring-for-small-teams-mvp-approach.md)
+- **Core Web Vitals Alert Thresholds: Real World vs Google**  
+  -> [docs/core-web-vitals-alert-thresholds-real-world-vs-google.md](docs/core-web-vitals-alert-thresholds-real-world-vs-google.md)
 
 ## Prefer a Ready-Made Solution?
 
