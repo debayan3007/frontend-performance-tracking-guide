@@ -4,15 +4,34 @@ Modern web performance tools excel at providing snapshots but often fall short i
 
 This repository outlines practical patterns for continuously tracking web performance metrics, detecting early degradations, and designing alerts that developers can trust.
 
+**Topics:** `performance` `core-web-vitals` `LCP` `INP` `CLS` `Lighthouse` `PageSpeed Insights` `performance monitoring` `regression detection` `performance budgets` `frontend performance` `performance alerts` `time-series metrics` `Web Vitals` `performance dashboard` `continuous monitoring`
+
 ## The Real Problem
 
 While tools like PageSpeed Insights (PSI) and Lighthouse offer valuable insights, they primarily focus on single-point measurements.
 
 However, performance issues often manifest gradually, making them harder to detect without continuous monitoring.
 
+```mermaid
+flowchart LR
+    subgraph tools["What tools give"]
+        A[Single snapshot]
+    end
+    subgraph need["What regressions need"]
+        B[Trends over time]
+    end
+    A -.->|"gap"| B
+```
+
 ## What Real Monitoring Requires
 
 Effective performance monitoring systems typically encompass:
+
+```mermaid
+flowchart LR
+    A[Schedule] --- B[Normalize] --- C[Store]
+    D[Trends] --- E[Alert] --- F[Feedback]
+```
 
 - **Scheduled Data Collection:** Automated, periodic metric gathering to ensure consistent data over time.
 - **Metric Normalization:** Standardizing data formats for easier analysis and comparison.
@@ -25,7 +44,15 @@ Effective performance monitoring systems typically encompass:
 
 A typical performance monitoring pipeline includes:
 
-**Scheduler ? Metric Runner ? Normalizer ? Storage ? Trend Engine ? Alert Engine ? Developer Interface**
+```mermaid
+flowchart LR
+    A[Scheduler] --> B[Metric Runner]
+    B --> C[Normalizer]
+    C --> D[Storage]
+    D --> E[Trend Engine]
+    E --> F[Alert Engine]
+    F --> G[Developer Interface]
+```
 
 - **Scheduler:** Triggers periodic data collection.
 - **Metric Runner:** Executes performance tests using tools like PSI or Lighthouse.
