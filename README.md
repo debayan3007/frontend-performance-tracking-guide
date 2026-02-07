@@ -95,6 +95,8 @@ If you want to go deeper into specific parts of performance monitoring design:
   -> [docs/designing-performance-monitoring-for-small-teams-mvp-approach.md](docs/designing-performance-monitoring-for-small-teams-mvp-approach.md)
 - **Core Web Vitals Alert Thresholds: Real World vs Google**  
   -> [docs/core-web-vitals-alert-thresholds-real-world-vs-google.md](docs/core-web-vitals-alert-thresholds-real-world-vs-google.md)
+- **Cost of Running Performance Monitoring At Scale**  
+  -> [docs/cost-of-running-performance-monitoring-at-scale.md](docs/cost-of-running-performance-monitoring-at-scale.md)
 
 ## Prefer a Ready-Made Solution?
 
