@@ -79,6 +79,17 @@ A basic setup might involve:
 
 While straightforward, this approach can quickly become complex when scaling or aiming for higher accuracy.
 
+## Deep Dive Topics
+
+If you want to go deeper into specific parts of performance monitoring design:
+
+- **Designing Alert Systems Developers Don't Ignore**  
+  ? [docs/designing-alert-systems-developers-dont-ignore.md](docs/designing-alert-systems-developers-dont-ignore.md)
+- **Why PSI Snapshots Are Misleading**  
+  ? [docs/psi-snapshots-are-misleading.md](docs/psi-snapshots-are-misleading.md)
+- **Storing Performance Metrics: Schema & Tradeoffs**  
+  ? [docs/storing-performance-metrics.md](docs/storing-performance-metrics.md)
+
 ## Prefer a Ready-Made Solution?
 
 If building and maintaining such a system isn't feasible, consider using [WebVitalsKit](https://app.webvitalskit.com), a tool designed to handle these challenges out of the box.
